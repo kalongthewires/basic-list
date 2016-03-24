@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Basic List</title>
+</head>
+<body>
+
+	<form id="form">
+		<input type="text" placeholder="" id="itemInput" autofocus>
+		<input type="submit" value="Add" id="submit">
+	</form>
+
+	<ul id="list"></ul>
+
+	<script src="BasicList.js"></script>
+	<script type="text/javascript">
+		new BasicList({
+			submitButtonSelector: '#form',
+			listSelector: '#list',
+			itemInputSelector: '#itemInput'
+		});
+	</script>
+
+</body>
+</html>
